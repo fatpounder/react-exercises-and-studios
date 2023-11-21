@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://natashaskitchen.com/chicken-tortilla-soup-recipe/";
+   let authorPhoto = "https://natashaskitchen.com/wp-content/uploads/2023/02/NK-Head-Red-Shirt-small.png";
+   let authorName = "Natasha Kravchuk";
 
    return (
       <div>
@@ -17,7 +17,15 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = [
+      'Sour cream',
+      'tortilla strips',
+      'Shredded cheddar cheese',
+      'Cilantro',
+      'Avocado',
+      'Lime wedges',
+      'Jalapeno',
+   ];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -36,8 +44,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>Chicken Tortilla Soup Recipe</h1>
+            <p>Chicken Tortilla Soup is the perfect easy weeknight dinner. Full of shredded chicken, corn, beans, and homemade tortilla strips, this soup is a meal in itself. It’s comforting, hearty, and filling.</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -49,7 +57,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://natashaskitchen.com/wp-content/uploads/2020/10/Chicken-Tortilla-Soup-5.jpg" alt="" className="imageUpdates"/>
    );
 }
 
